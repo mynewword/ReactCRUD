@@ -4,9 +4,7 @@ import './index.css';
 import CommentApp from "./containers/CommentApp"
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
-import commentsReducer from './reducers/comment'
-const store=createStore(commentsReducer)
+import store from './reducers/store'
 ReactDOM.render(
   <Provider store={store}>
     <CommentApp />
