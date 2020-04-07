@@ -23,6 +23,9 @@ export default class comment extends Component {
             this.props.onhandleDelete(this.props.index)
         }
     }
+    componentWillUnmount(){
+        clearInterval(this.timer);
+    }
     render() {
         return (
             <div className="comment">
